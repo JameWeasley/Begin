@@ -1,0 +1,2 @@
+for x in range(12):
+    print("787 x" , x+1 , "=" , 787*(x+1))
