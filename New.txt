@@ -1,0 +1,16 @@
+def Addnumber(x,y):
+    print(x+y)
+def Addnumber2(x,y):
+    print(x-y)
+def Addnumber3(x,y):
+    print(x*y)
+def Addnumber4(x,y):
+    print(x/y)
+
+x = int(input("Enter number : "))
+y = int(input("Enter number : "))
+
+Addnumber(x,y)
+Addnumber2(x,y)
+Addnumber3(x,y)
+Addnumber4(x,y)
