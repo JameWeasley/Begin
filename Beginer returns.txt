@@ -1,0 +1,41 @@
+#Beginner for returns
+
+def Login():
+    User = input("Username : ")
+    Pass = input("Password : ")
+    while User != "dea" or Pass != "1234":
+        print("Your Username or Password not correct")
+        User = input("Username : ")
+        Pass = input("Password : ")
+    print("Sucess !!")
+    return ShowMenu()
+
+
+def ShowMenu():
+    print("___Welcome to Calculate___")
+    print("1. Val Calculator")
+    print("2. Price Calculator")
+    return Select()
+
+def Select():
+    Menu = int(input("Your Select : "))
+    if Menu == 1:
+        return VatCalculator()
+    elif Menu == 2:
+        return PriceCalculate()
+
+
+def VatCalculator():
+    totalprice = int(input("THB : "))
+    vat = 7
+    result = totalprice + (totalprice*7/100)
+    return result
+
+
+def PriceCalculate():
+    price1 = int(input("First Product Price : "))
+    price2 = int(input("Second Product Price : "))
+    total = (price1+price2)
+    return total
+
+print(Login())
